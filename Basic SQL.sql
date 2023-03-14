@@ -322,8 +322,8 @@ WHERE
     gloss_qty BETWEEN 24 AND 29;
 
 
--- Display all information from web_events table regarding individuals who were contacted via the organic or adwords channels, 
-   and started their account at any point in 2016, sorted from newest to oldest
+/* Display all information from web_events table regarding individuals who were contacted via the organic or adwords channels, 
+   and started their account at any point in 2016, sorted from newest to oldest */
    
 SELECT 
     *
@@ -331,7 +331,7 @@ FROM
     web_events
 WHERE
     channel IN ('organic' , 'adwords')
-        AND occurred_at BETWEEN '2016-01-01' AND '2016-12-31'
+        AND YEAR(occurred_at) = 2016
 ORDER BY occurred_at DESC;
 
 
