@@ -339,7 +339,7 @@ ORDER BY 2 DESC;
 SELECT 
     CONCAT(YEAR(occurred_at),
             '-',
-            MONTH(occurred_at)) AS month_year,
+            MONTH(occurred_at)) AS month_year, -- DATE_FORMAT(occurred_at,'%Y-%m') is simpler
     SUM(gloss_amt_usd) AS total_gloss_amt
 FROM
     orders o
