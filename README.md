@@ -17,3 +17,7 @@ In this project, I used this database to demonstrate different operations of SQL
 05- SQL Data Cleaning
 
 06- Advanced SQL Window Functions 
+
+
+![Parch Posey Schema Diagram](https://user-images.githubusercontent.com/126423460/226066107-e4e69411-8e5d-4816-b8f5-fd7329fa068f.PNG)
+
