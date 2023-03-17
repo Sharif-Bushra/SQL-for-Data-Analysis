@@ -7,8 +7,13 @@ Please refer to the schema folder to explore the different tables in the databas
 In this project, I used this database to demonstrate different operations of SQL from basic to advanced.
 
 01- Basic SQL
+
 02- SQL Joins
+
 03- SQL Aggregations
+
 04- SQL Sub Queries and CTEs
+
 05- SQL Data Cleaning
+
 06- Advanced SQL Window Functions 
