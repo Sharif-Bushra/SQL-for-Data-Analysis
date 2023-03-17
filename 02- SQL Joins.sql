@@ -1,3 +1,12 @@
+/* Note that in MySQL there are 3 types of JOINs, which are 
+INNER JOIN -typing INNER is optional-, LEFT OUTER JOIN and RIGHT OUTER JOIN -typing OUTER is optional-.
+LEFT JOIN and RIGHT JOIN returns all rows from one table 'either left or right'and only those rows from the other table where the join condition is fulfilled.
+Here we'll be only using JOIN which is used to return all rows from multiple tables where the join condition is satisfied,
+The reason for only using JOIN is that each primary key and foreign key in all related tables in this database have the same valuse with no missing data.
+
+At the end will show the difference between UNION and UNION ALL*/
+
+
 -- Display all the data from the accounts table and all their orders details from the orders table
 
 SELECT 
@@ -196,3 +205,26 @@ FROM
 WHERE
     YEAR(occurred_at) = 2015
 ORDER BY occurred_at DESC;
+
+
+
+/* The UNION operator is used to combine the result-set of two or more SELECT statements.
+
+- Every SELECT statement within UNION must have the same number of columns.
+- The columns must also have similar data types.
+- The columns in every SELECT statement must also be in the same order.
+
+UNION selects only distinct values, UNION ALL selects duplicate values as well. */
+
+
+-- Display the primary_poc from the accounts table and the name from the sales_reps table in one column
+
+SELECT primary_poc FROM accounts
+UNION
+SELECT name FROM sales_reps;
+-- Results in 380 distinct names
+
+SELECT primary_poc FROM accounts
+UNION ALL
+SELECT name FROM sales_reps;
+-- Results in 401 names, the duplicate names are returned as well
