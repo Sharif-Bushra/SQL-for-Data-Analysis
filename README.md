@@ -2,7 +2,7 @@
 SQL for Data Analysis using MySQL - analyzing Parch&Posey fictional company database
 
 Parch and Posey is a fictional company that sells different types of paper (standard, gloss, poster),
-Please refer to the schema folder to explore the different tables in the database.
+Please refer to the schema diagram to explore the different tables in the database.
 
 In this project, I used this database to demonstrate different operations of SQL from basic to advanced.
 
